@@ -1,0 +1,8 @@
+.line{
+  text-decoration: line-through;
+}
+
+.todolist{
+  width: 500px;
+  margin: 50px auto;
+}

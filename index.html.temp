@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Todo list</title>
+</head>
+<body>
+  <div class="todolist">
+    <form method="post", action="/">
+      <input type="text" id="myInput" name="name" placeholder="Fais toi plaisir !">
+      <input type="date", id="date" name="date" placeholder="date de la tâche">
+      <button id="bouton">Envoyé</button>
+      <button id="oups">Oups</button>
+    </form>
+  <ul id="liste">
+  </ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
