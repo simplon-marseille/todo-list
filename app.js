@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 
 app.post('/send', (req, res) => {
   console.log('hello from back-end');
-  const task = {name: req.body.t, date: req.body.d}
+  const task = {name: req.body.t, todo_date: req.body.d}
   console.log(task);
   const response = connection.query(`insert into tasks set ?`, task, function(err, result){
     if(err){
