@@ -20,7 +20,7 @@
     </form>
   <div class="list-group">
      <% allTasks.forEach((task) => { %>
-      <button type="button" class="list-group-item" id="<%= task.id %>"><%= task.name.toUpperCase() %> programmée pour <%= task.date.toDateString() %> <a id="taskId" class="pull-right" href="/delete/<%= task.id %>">Supprimer</a></button>
+      <button type="button" class="list-group-item" id="<%= task.id %>"><%= task.name.toUpperCase() %> programmée pour <%= task.todo_date.toDateString() %> <a id="taskId" class="pull-right" href="/delete/<%= task.id %>">Supprimer</a></button>
     <% }) %>
 </div>
   </div>
