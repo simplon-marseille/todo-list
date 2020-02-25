@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
-var cors = require('cors')
+var cors = require('cors');
+const port = process.env.PORT || 3000;
 
 app.use("/public", express.static('public'))
 app.use(cors())
@@ -46,7 +47,7 @@ app.get('/delete/:id', (req, res) => {
 });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log('Server open on 3000');
 });
 
